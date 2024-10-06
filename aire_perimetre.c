@@ -12,7 +12,7 @@ int main()
     printf("2. Rectangle\n");
     printf("3. Triangle\n");
     printf("4. Cercle");
-    scanf("%d", choix);
+    scanf("%d", &choix);
     // Utilisons la structure switch pour que le programe execute les calculs exacts en fonction du choix
     switch(choix){
     	if (choix=1){
@@ -21,8 +21,8 @@ int main()
             scanf("%f",&c);
             	perimetre= c*4;
             	aire= c*c;
-            printf("perimetre:", "%f\n", perimetre);
-            printf("aire:", "%f\n",aire);
+            printf("perimetre: %f\n", perimetre);
+            printf("aire: %f\n",aire);
 		}
            break;
             // break est fondamentale sinon le code va continuer a s'executer
@@ -34,8 +34,8 @@ int main()
             scanf("%f",&l);
             	perimetre= (L+l)*2;
 				aire= L*l;
-            printf("perimetre:", "%f\n", perimetre);
-            printf("aire:", "%f\n", aire);
+            printf("perimetre: %f\n", perimetre);
+            printf("aire: %f\n", aire);
 			}
             break;
             if (choix=3){
@@ -48,8 +48,8 @@ int main()
             scanf("%f",&t);
             	perimetre= b+h+t;
             	aire= (h*b)*0.5;
-            printf("perimetre:", "%f\n",perimetre );
-            printf("aire:", "%f\n", aire);
+            printf("perimetre: %f\n",perimetre );
+            printf("aire: %f\n", aire);
 			}
             break;
             if (choix=4){
@@ -58,8 +58,8 @@ int main()
             scanf("%f",&r);
             	perimetre= 2*(PI*r);
             	aire= (PI*r*r);
-            printf("perimetre:", "%f\n", perimetre);
-            printf("aire:", "%f\n",aire);
+            printf("perimetre: %f\n", perimetre);
+            printf("aire: %f\n",aire);
 			}
             break;
             // l'instruction default s'est au cas ou on entre une valeur de choix non defini
@@ -67,6 +67,5 @@ int main()
             printf("choix non valide.\n");
     }
     return 0;
-    
     
 }
