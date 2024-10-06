@@ -11,11 +11,11 @@ int main()
         printf("Entrer un nombre positif./n");
         scanf("%d",&n);
     } else{
-            f=1; 
+            f=1;
         for(i=1; i<=n; i++){
             f*=i;
         }
-        printf( "le factoriel est", "%d\n", f );     
+        printf( "le factoriel est %d\n", f );     
     }
-    return f;
+    return 0;
 }
